@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Example - Time Limits Control</title>
+    <style>
+        .alert {
+            color: red;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
+    <!-- Example of a meta refresh with short interval -->
+    <meta id="refreshMeta" http-equiv="refresh" content="30"> <!-- Refresh every 30 seconds -->
+</head>
+<body>
+    <div class="container">
+        <h1>Example of Poor Time Limit Control</h1>
+        
+        <!-- Section with no control over refresh -->
+        <section>
+            <h2>Refresh Control</h2>
+            <p>This page refreshes every 30 seconds. There is no way to adjust the refresh interval.</p>
+        </section>
+
+        <!-- Section with no control over redirection -->
+        <section>
+            <h2>Redirection Control</h2>
+            <p>This page will redirect to another page after 10 seconds. There is no option to delay or stop the redirection.</p>
+        </section>
+
+        <!-- Section with fixed session timeout -->
+        <section>
+            <h2>Session Time Limit</h2>
+            <p>Your session will automatically expire after 5 minutes of inactivity. You cannot extend the session time.</p>
+        </section>
+    </div>
+
+    <script>
+        // No JavaScript functions for controlling refresh, redirection, or session time limit
+    </script>
+</body>
+</html>
